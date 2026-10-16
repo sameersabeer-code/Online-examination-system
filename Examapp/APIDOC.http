@@ -1,0 +1,32 @@
+###
+GET http://127.0.0.1:8000/questions/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "question":"Which keyword is used to define a function in Python?",
+    "option_a":"defi",
+    "option_b":"return",
+    "option_c":"func",
+    "option_d":"para",
+    "correct_answer":"B"
+}
+###
+GET http://127.0.0.1:8000/question/2/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/question/2/
+Content-Type: application/json
+
+{
+    "question":"out put of 3**2",
+    "option_a":"5",
+    "option_b":"15",
+    "option_c":"8",
+    "option_d":"22",
+    "correct_answer":"C"
+}
